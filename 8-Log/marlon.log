@@ -1,0 +1,30 @@
+DEBUG:root:This is e debug log
+INFO:root:This is a info log
+WARNING:root:This is a warn log
+ERROR:root:This is a error log
+CRITICAL:root:This is a critial log
+DEBUG:root:debug
+INFO:root:info
+WARNING:root:warn
+ERROR:root:error
+CRITICAL:root:critial
+2018-12-01 14:32:50,654====DEBUG++++++This is e debug log
+2018-12-01 14:32:50,654====INFO++++++This is a info log
+2018-12-01 14:32:50,654====WARNING++++++This is a warn log
+2018-12-01 14:32:50,654====ERROR++++++This is a error log
+2018-12-01 14:32:50,654====CRITICAL++++++This is a critial log
+2018-12-01 14:32:50,654====DEBUG++++++debug
+2018-12-01 14:32:50,655====INFO++++++info
+2018-12-01 14:32:50,655====WARNING++++++warn
+2018-12-01 14:32:50,655====ERROR++++++error
+2018-12-01 14:32:50,655====CRITICAL++++++critial
+2018-12-01 14:33:40,654     DEBUG     This is e debug log
+2018-12-01 14:33:40,654     INFO     This is a info log
+2018-12-01 14:33:40,654     WARNING     This is a warn log
+2018-12-01 14:33:40,654     ERROR     This is a error log
+2018-12-01 14:33:40,654     CRITICAL     This is a critial log
+2018-12-01 14:33:40,655     DEBUG     debug
+2018-12-01 14:33:40,655     INFO     info
+2018-12-01 14:33:40,655     WARNING     warn
+2018-12-01 14:33:40,655     ERROR     error
+2018-12-01 14:33:40,655     CRITICAL     critial
