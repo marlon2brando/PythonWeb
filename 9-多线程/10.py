@@ -12,7 +12,7 @@ class ThreadFunc:
         '''
         :param nloop: loop函数的名称
         :param nsec: 系统休眠时间
-        :return:
+        :return: 无
         '''
         print('Start loop',nloop,'at ',time.ctime())
         time.sleep(nsec)
