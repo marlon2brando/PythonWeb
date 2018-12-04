@@ -97,7 +97,36 @@
       - Timer是利用多线程，在指定时间后启动一个功能
       - 案例16
 
-   - 可同斥锁
+   - 可重入锁
       - 一个锁，可以被一个线程多次申请
       - 主要解决递归调用的时候，需要申请锁的情况
       - 案例 17
+
+# 线程替代方案
+- subprocess
+   - 完全跳过线程，使用进程
+   - 是派生进程的主要替代方案
+   - python2.4 以后引入的
+
+- multiprocessing
+   - 使用threading的接口派生的，使用子进程
+   - 允许为多核或者多CPU派生进程，接口跟threading非常相似
+
+- concurrent.futures
+   - 新的异步执行模块
+   - 任务级别的操作
+   - python 3.2以后引入的
+
+# 多进程
+- 进程间的通讯(interprecess Communication,IPC)
+- 进程之间无任何共享状态
+- 进程的创建
+   - 直接生产Process的实例对象 案例18
+   - 生产派生的Process对象 案例 19
+
+- 在os 中查看 pid，ppid 以及他们的关系
+   - 案例 20
+
+- 生产者消费者模型
+   - JoinableQueue
+   - 案例21
