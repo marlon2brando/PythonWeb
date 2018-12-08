@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' ?><!--处理指令-->
+
+<!--根元素，有且只有一个根元素-->
+<school type="online" loc="Wuhan">
+
+    <student type="web">
+        <name>haha</name>
+        <sex>0</sex>
+        <score> math>80 </score>
+    </student>
+
+    <student type="ad">
+        <name>haha</name>
+        <sex>0</sex>
+    </student>
+
+    <student>
+        <name>haha</name>
+        <sex>0</sex>
+    </student>
+</school>
