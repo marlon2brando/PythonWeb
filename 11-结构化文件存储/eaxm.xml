@@ -2,7 +2,9 @@
 
 <!--根元素，有且只有一个根元素-->
 <school type="online" loc="Wuhan">
-
+    <teacher desc="PythonTeacher" score="90">
+        <name>liudana</name>
+    </teacher>
     <student type="web">
         <name>haha</name>
         <sex>0</sex>

@@ -49,7 +49,7 @@
               <score> math&gt;80 </score>
 
    - 把含有保留字符的部分放在CDATA快内容
-            <!CDATA [ select name,age from Stuedent where score > 80 ]>
+            <!CDATA [ select name,age from Student where score > 80 ]>
 
    - 常用的需要转义的保留字符和对应的实体引用
       - &：&AMP；
@@ -62,3 +62,36 @@
    - 以单词表示，首字母大小
    - 大小写严格区分
    - 配对标签必须一致
+
+
+# xml 访问
+
+## 读取
+- xml读取分两个技术，SAX，DOM
+- SAX（simple api for xml）
+   - 基于事件驱动
+   - 利用SAX解析文档设计到解析器和事件处理两部分
+   - 特点：
+      - 快
+      - 流式读取
+- DOM
+   - 是W3C规定的XML编程接口
+   - 一个xml文件要在缓存中以树形结构保存，读取
+   - 用途
+      - 定位浏览XML任何一个节点信息
+      - 添加删除相应位置
+
+   - minidom
+      - minidom.parse(filename):加载读取的xml文件，也可以是xml代码
+      - doc.documentElement:
+      - node.getAttribute(attr_name):获取节点属性
+      - node.getElementByTagName(tage_name):得到一个节点的对象集合
+      - node.childnodes:
+      - node.firstNodes:
+      - node.attributes[tage_name]
+
+   - etree
+      - 以树形结构来表示xml
+      - root.geeiterator:得到相应的可迭代的node集合
+      - root.iter
+      -
