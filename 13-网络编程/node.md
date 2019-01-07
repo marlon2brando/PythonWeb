@@ -70,10 +70,70 @@
       3. 监听接入的访问 socket
       4.
 
--FTP 编程
+- FTP 编程
 - FTP: FileTransformProtocal 文件传输协议
 - 用途：定制一些特殊的上传下载文件的服务
 - 用户分类：登录FTP服务器必须有一个账户
-   -
+   - Real账户：注册账户
+   - Guest账户：可能临时对某一类人的行为进行授权
+   - Anonymous账户：匿名账户，允许任何人
 
+- FTP工作流程
+   - FTP服务器一般是21号端口接收请求
+   - FTP使用20端口发送请求
+
+   1. 客户端连接远程主机上的FTP服务器
+   2. 客户端输入用户名和密码（或者''anonymous'和电子邮件地址）
+   3. 客户端和服务器进行各种文件传输和信息查询操作
+   4. 客户端和远程FTP服务器退出，结束传输
+
+- FTP 文件表示
+   - 分三段表示FTP服务器的文件
+   - HOST：主机地址，类似于 ftp.mozilla.org, 以ftp开头
+   - DIR:  目录，表示文件所在的本地路径，例如 pub/android/focus/1.9
+   - FILE：文件名,表示文件名称
+   - 如果想完整的精确表示ftp上某一个文件，需要上述三个部分组合在一起
+   - 案例v06
+
+# Mail 编程
+## 电子邮件的历史
+- 起源：
+   - 1969 Leonard K. 教授发送同事的 'LO'
+   - 1971 美国国防部的自主的阿帕网（Apranet）的通讯机制
+   - 通讯地址里用 @ 符号
+   - 1987年，中国的第一封第一份电子邮件
+   "Across the Great Wall we can reach every corner in the world"
+
+- 管理程序：
+   - Euroda 使邮件普及
+   - Netscape,outlook,foxmail,后来居上
+   - HotMail 使用浏览器发送邮件
+
+## 邮件工作流程
+- MUA (MailUserAgent),邮件用户代理
+- MTA (MailTransferAgent),邮件传输代理
+- MDA (MailDeliverAgent),邮件传输代理
+
+- laoshi@qq.com 老是给学生 （xuesheng@sina.com）发送一封邮件
+
+- 编写程序：
+   用户-> MUA -> MTA (一个或者若干个)... -> MDA -> 用户
+
+    - 发送：MUA-> MTA with SMTP(simple mail transfer protocol)
+    - 接收：MDA-> MUA with POP3 and IMAP(Post office protocol v3 and)
+
+- Python for mail
+   - SMTP协议负责发送邮件
+      - 使用email模块构建一封邮件
+         - 纯文本邮件 send_mail.py
+         - HTML格式的邮件 send_html_mail.py
+         - 发送带附件的邮件
+         - 添加邮件头，抄送的等信息
+            - mail["From"] 表示发送者的信息，包括姓名和邮件
+            - mail["To"] 表示接收者信息，包括信息和邮件地址
+            - mail["Subject"] 表示邮件的摘要
+
+        - 使用smtplib模块发送邮件
+
+   - POP3协议负责接收邮件
 
