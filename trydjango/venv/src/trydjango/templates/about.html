@@ -13,6 +13,13 @@
         {{ my_number }}, {{ my_list }}
     </p>
 
+    <ul>
+        {% for item in my_list %}
+            <li>{{forloop.counter}} - {{ item }}</li>
+        {% endfor %}
+    </ul>
+
+
 
 {% endblock %}
 

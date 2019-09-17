@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+
 # Create your views here.
 
 def home_view(request,*args, **kwargs):
@@ -23,3 +24,14 @@ def about_view(request,*args,**kargs):
 def social_view(request,*args,**kargs):
     return render(request,'social.html',{})
 
+
+import json
+from trydjango.settings import BASE_DIR
+
+def flutter_api(*arg, **kargs):
+    path = BASE_DIR + '/pages/userdata.json'
+    print(path)
+    with open(path,'r') as jsonfile:
+        data = jsonfile.read()
+    return HttpResponse(data)
+    # return HttpResponse("[{'name':'1','age':27}]")
