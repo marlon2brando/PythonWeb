@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from pages.views import home_view, contact_view,social_view,about_view, flutter_api
+from products.views import products_view, products_view_add
 
 urlpatterns = [
     path('', home_view,name='home'),
@@ -26,4 +27,8 @@ urlpatterns = [
     path('social/', social_view),
 
     path('users/', flutter_api),
+    
+    path('product/',products_view),
+    path('product_add/',products_view_add),
+
 ]
