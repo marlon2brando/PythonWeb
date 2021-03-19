@@ -95,7 +95,7 @@ numpy==1.18.1
 olefile==0.46
 packaging==19.2
 pilkit==2.0
-Pillow==6.2.1
+Pillow==8.1.1
 py-vapid==1.7.0
 pyasn1==0.4.8
 pycodestyle==2.5.0
