@@ -51,7 +51,7 @@ django-smart-selects==1.5.4
 django-storages==1.8
 django-treebeard==4.3
 django-uuslug==1.1.9
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 docutils==0.15.2
 elasticsearch==7.0.0
 elasticsearch-dsl==7.0.0
