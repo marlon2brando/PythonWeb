@@ -11,7 +11,7 @@ awscli==1.16.307
 boto==2.49.0
 boto3==1.10.43
 botocore==1.13.43
-bottle==0.12.17
+bottle==0.12.19
 certifi==2019.11.28
 cffi==1.14.0
 chardet==3.0.4
